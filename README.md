@@ -7,6 +7,7 @@ These are example projects that correlate with my blog post [here](https://adotp
 To build the image: 
 
 ```shell
+# cd docker-multi-stage-build-demo
 $ docker build -t anna/docker-multi-stage-build-demo:1.0-SNAPSHOT .
 ```
 
@@ -15,6 +16,7 @@ $ docker build -t anna/docker-multi-stage-build-demo:1.0-SNAPSHOT .
 To build the image:
 
 ```shell
+$ cd docker-normal-build-demo
 $ docker build -t anna/docker-normal-build-demo:1.0-SNAPSHOT .
 ```
 
@@ -23,6 +25,7 @@ $ docker build -t anna/docker-normal-build-demo:1.0-SNAPSHOT .
 First, package the source code:
 
 ```shell
+$ cd docker-package-only-build-demo
 $ mvn clean package
 ```
 
