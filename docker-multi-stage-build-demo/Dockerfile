@@ -2,11 +2,7 @@
 FROM maven:3.6.1-jdk-8-alpine AS MAVEN_BUILD 
 
 # copy the pom and src code to the container 
-COPY pom.xml /docker-multi-stage-build-demo/pom.xml 
-COPY src /docker-multi-stage-build-demo/src 
-
-# define a working directory to run subsequent commands 
-WORKDIR /docker-multi-stage-build-demo 
+COPY ./ ./  
 
 # package our application code 
 RUN mvn clean package 

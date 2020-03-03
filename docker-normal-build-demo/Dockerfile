@@ -2,10 +2,7 @@
 FROM maven:3.6.3-jdk-8 
 
 # copy the source tree and the pom.xml to our new container 
-COPY ./ ./ 
-
-# declare a working directory to run subsequent commands 
-WORKDIR /docker-normal-build-demo 
+COPY ./ ./  
 
 # package our application code 
 RUN mvn clean package 
